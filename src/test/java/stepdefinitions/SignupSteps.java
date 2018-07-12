@@ -14,42 +14,43 @@ public class SignupSteps {
 
     @When("^I select My account menu$")
     public void iSelectMyAccountMenu() throws Throwable {
-        selectMyAccountMenu();
+        //selectMyAccountMenu();
+        System.out.println("SELECT ACCOUNT MENU");
     }
 
     @And("^I select Sign up button$")
     public void iSelectSignUpButton() throws Throwable {
-        selectSignUpButton();
+       // selectSignUpButton();
     }
 
     @And("^I enter First name$")
     public void iEnterFirstName() throws Throwable {
-        enterFirstName();
+       // enterFirstName();
     }
 
     @And("^I enter Last name$")
     public void iEnterLastName() throws Throwable {
-        enterLastName();
+        //enterLastName();
     }
 
     @And("^I enter Mobile number$")
     public void iEnterMobileNumber() throws Throwable {
-        enterMobileNumber();
+        //enterMobileNumber();
     }
 
     @And("^I enter Email address$")
     public void iEnterEmailAddress() throws Throwable {
-        enterEmailAddress();
+       // enterEmailAddress();
     }
 
     @And("^I enter Password$")
     public void iEnterPassword() throws Throwable {
-        enterPassword();
+        //enterPassword();
     }
 
     @And("^I confirm Password$")
     public void iConfirmPassword() throws Throwable {
-        confirmPassword();
+        //confirmPassword();
     }
 
     @Then("^user account page is opened$")

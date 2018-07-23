@@ -1,3 +1,4 @@
 /home/ralfs/Automation/src/test/java/testrunner/TestRunner.java
+/home/ralfs/Automation/src/test/java/stepdefinitions/LoginSteps.java
 /home/ralfs/Automation/src/test/java/stepdefinitions/Hooks.java
 /home/ralfs/Automation/src/test/java/stepdefinitions/SignupSteps.java

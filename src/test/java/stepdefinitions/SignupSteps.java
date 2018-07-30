@@ -1,6 +1,5 @@
 package stepdefinitions;
 
-import static utils.RandomGenerator.*;
 import cucumber.api.java.en.And;
 import general.User;
 import pages.signup.SignUpPageObject;
@@ -18,31 +17,36 @@ public class SignupSteps {
 
     @And("^I enter Last name$")
     public void iEnterLastName() throws Throwable {
-        signup.enterLastName(generateRandomString());
+        signup.enterLastName(user.getLastName());
     }
 
     @And("^I enter Mobile number$")
     public void iEnterMobileNumber() throws Throwable {
-        signup.enterMobileNumber(generateRandomPhoneNumber());
+        signup.enterMobileNumber(user.getMobileNumber());
     }
 
     @And("^I enter Email address$")
     public void iEnterEmailAddress() throws Throwable {
-        signup.enterEmail(generatRandomEmail());
+        signup.enterEmail(user.getEmailAddress());
     }
 
     @And("^I enter Password$")
     public void iEnterPassword() throws Throwable {
-        signup.enterPassword(generateRandomString());
+        signup.enterPassword(user.getPassword());
     }
 
     @And("^I confirm Password$")
     public void iConfirmPassword() throws Throwable {
-        signup.enterConfirmationPassword(generateRandomString());
+        signup.enterConfirmationPassword(user.getPassword());
     }
 
-    @And("^I select Sign up button$")
-    public void iSelectSignUpButton() throws Throwable {
-        signup.selectSignUpButton();
+    @And("^I create new account$")
+    public void iCreateNewAccount() throws Throwable {
+        iEnterFirstName();
+        iEnterLastName();
+        iEnterMobileNumber();
+        iEnterEmailAddress();
+        iEnterPassword();
+        iConfirmPassword();
     }
 }

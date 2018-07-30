@@ -11,7 +11,7 @@ public class HomepageSteps {
 
     @Given("^I have opened homepage$")
     public void iHaveOpenedHomepage() throws Throwable {
-        System.out.println("OPEN HOMEPAGE");
+        System.out.println("Navigation is visible");
     }
 
     @When("^I select My account menu$")
@@ -23,4 +23,5 @@ public class HomepageSteps {
     public void iSelectAccountMenuSignUpButton() throws Throwable {
         homepage.selectSignUpButton();
     }
+
 }

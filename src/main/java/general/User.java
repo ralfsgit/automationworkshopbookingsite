@@ -12,19 +12,23 @@ public class User {
     private String firstName;
     private String lastName;
     private String mobileNumber;
-    private String emailAdress;
+    private String emailAddress;
     private String password;
 
 
-    public User () {
+    public User() {
         this.firstName = generateRandomString();
         this.lastName = generateRandomString();
         this.mobileNumber = generateRandomPhoneNumber();
-        this.emailAdress = generatRandomEmail();
+        this.emailAddress = generatRandomEmail();
         this.password = generateRandomString();
 
     }
-
-
+    public User(String firstName, String lastName){
+        this.firstName=firstName;
+        this.lastName=lastName;
+        
+    }
 
 }
+
